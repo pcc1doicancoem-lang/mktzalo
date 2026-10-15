@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, ArrowRight, Check, Copy, MessageCircle, Video, Gift, MessagesSquare, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import workspace from "@/assets/ai-workspace.jpg";
+import instructorPhoto from "@/assets/le-hong-son.png.asset.json";
 
 const groupUrl = "https://zalo.me/g/tijqol733";
 const title = "Lê Hồng Sơn | Cộng đồng AI Marketing & Bán hàng";
@@ -35,7 +35,7 @@ function Index() {
     <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href={groupUrl} target="_blank" rel="noopener noreferrer">Vào nhóm miễn phí <ArrowUpRight /></a></Button></div></header>
     <main>
       <section className="hero-section">
-        <img className="hero-photo" src={workspace} alt="Ảnh minh họa không gian thực hành AI, thiết kế hình ảnh và sáng tạo nội dung" width={1536} height={1024} fetchPriority="high" />
+        <img className="hero-photo" src={instructorPhoto.url} alt="Lê Hồng Sơn đang hướng dẫn mọi người thực hành ứng dụng AI" width={1254} height={1254} fetchPriority="high" />
         <div className="hero-shade" />
         <div className="page-width hero-content">
           <div className="eyebrow"><span className="status-dot" /> CỘNG ĐỒNG ZALO MIỄN PHÍ</div>
