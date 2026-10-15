@@ -35,17 +35,20 @@ function Index() {
     <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href={groupUrl} target="_blank" rel="noopener noreferrer">Vào nhóm miễn phí <ArrowUpRight /></a></Button></div></header>
     <main>
       <section className="hero-section">
-        <img className="hero-photo" src={instructorPhoto.url} alt="Lê Hồng Sơn đang hướng dẫn mọi người thực hành ứng dụng AI" width={1254} height={1254} fetchPriority="high" />
-        <div className="hero-shade" />
-        <div className="page-width hero-content">
-          <div className="eyebrow"><span className="status-dot" /> CỘNG ĐỒNG ZALO MIỄN PHÍ</div>
-          <h1>AI Marketing<br />& <span>Bán hàng</span><span className="hero-byline">Cùng Lê Hồng Sơn</span></h1>
-          <p className="hero-question">Biết AI rất mạnh,<br />nhưng chưa biết bắt đầu từ đâu?</p>
-          <p className="hero-description">Cùng trao đổi, thực hành và đưa AI vào công việc mỗi ngày. Từ viết content, tạo ảnh đến làm video bán hàng.</p>
-          <JoinLink />
-          <div className="hero-assurance"><Check /> Miễn phí tham gia <span>·</span> Dành cho cả người mới</div>
+        <div className="page-width hero-grid">
+          <div className="hero-copy">
+            <div className="eyebrow"><span className="status-dot" /> CỘNG ĐỒNG ZALO MIỄN PHÍ</div>
+            <h1>AI Marketing<br />& <span>Bán hàng</span><span className="hero-byline">Cùng Lê Hồng Sơn</span></h1>
+            <p className="hero-question">Biết AI rất mạnh,<br />nhưng chưa biết bắt đầu từ đâu?</p>
+            <p className="hero-description">Cùng trao đổi, thực hành và đưa AI vào công việc mỗi ngày. Từ viết content, tạo ảnh đến làm video bán hàng.</p>
+            <JoinLink />
+            <div className="hero-assurance"><Check /> Miễn phí tham gia <span>·</span> Dành cho cả người mới</div>
+          </div>
+          <figure className="hero-portrait">
+            <div className="hero-frame"><img src={instructorPhoto.url} alt="Lê Hồng Sơn đang hướng dẫn mọi người thực hành ứng dụng AI" width={1254} height={1254} fetchPriority="high" /></div>
+            <figcaption className="hero-caption">CONTENT <span> / </span> HÌNH ẢNH <span> / </span> VIDEO</figcaption>
+          </figure>
         </div>
-        <div className="hero-caption">CONTENT <span> / </span> HÌNH ẢNH <span> / </span> VIDEO</div>
       </section>
       <div className="audience-strip"><div className="page-width audience-inner"><span>DÀNH CHO BẠN</span><p>Chủ shop</p><span className="strip-divider" /><p>Người bán online</p><span className="strip-divider" /><p>Người làm marketing</p><span className="strip-divider" /><p>Người mới dùng AI</p></div></div>
       <section className="page-width problem-section">
