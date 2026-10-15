@@ -177,7 +177,7 @@ body { font-family: var(--font-sans); letter-spacing: 0; }
 .brand-name span { display:block; color:var(--muted-foreground); font-size:9px; font-weight:500; margin-top:5px; }
 .header-join { font-size:12px; font-weight:700; }
 .hero-section { position:relative; min-height:630px; background:var(--hero-veil); }
-.hero-photo { position:absolute; inset:0; height:100%; width:100%; object-fit:cover; object-position:center; }
+.hero-photo { position:absolute; inset:0; height:100%; width:100%; object-fit:cover; object-position:center 18%; }
 .hero-shade { position:absolute; inset:0; background:var(--hero-overlay); }
 .hero-content { position:relative; padding-block:55px 53px; }
 .eyebrow { display:flex; align-items:center; gap:9px; color:var(--accent); font-size:10px; font-weight:700; margin-bottom:24px; }
