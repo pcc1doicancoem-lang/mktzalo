@@ -24,6 +24,10 @@ function JoinLink({ children = "Vào nhóm Zalo miễn phí", className = "" }: 
   return <Button variant="join" asChild className={className}><a href={groupUrl} target="_blank" rel="noopener noreferrer">{children}<ArrowUpRight aria-hidden="true" /></a></Button>;
 }
 
+function ScrollToFormLink({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return <Button variant="join" asChild className={className}><a href="#tham-gia">{children}<ArrowDown aria-hidden="true" /></a></Button>;
+}
+
 const scriptUrl = "https://script.google.com/macros/s/AKfycbyLFJk1OJIg0sGc3_vjmvCjRINiDbkL6TTVffKqj1YAjg8YsmeZtZaQpcuX21hfQ2XeOjOg/exec";
 
 function SignupForm() {
