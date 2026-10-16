@@ -191,7 +191,8 @@ h1 { font-size:60px; line-height:1.16; font-weight:800; margin:0; }
 h1 > span:not(.hero-byline) { color:var(--accent); }
 .hero-byline { display:block; font-size:16px; font-weight:500; margin-top:16px; color:var(--muted-foreground); }
 .hero-question { font-size:23px; font-weight:700; line-height:1.5; margin-top:28px; }
-.hero-description { font-size:14px; line-height:1.9; color:var(--muted-foreground); max-width:450px; margin:13px 0 25px; }
+.hero-description { font-size:14.5px; line-height:1.9; color:var(--foreground); font-weight:500; max-width:470px; margin:13px 0 25px; }
+.hero-description strong { color:var(--primary); font-weight:700; }
 .join-button { min-height:52px; padding:14px 25px; border-radius:6px; color:var(--primary-foreground); background:var(--primary); font-size:13px; font-weight:800; box-shadow:var(--cta-shadow); }
 .join-button:hover { background:color-mix(in oklab, var(--primary) 85%, var(--foreground)); }
 .join-button svg { width:19px; height:19px; }

@@ -79,7 +79,7 @@ function Index() {
             <div className="eyebrow"><span className="status-dot" /> CỘNG ĐỒNG ZALO MIỄN PHÍ</div>
             <h1>AI Marketing<br />& <span>Bán hàng</span><span className="hero-byline">Cùng Lê Hồng Sơn</span></h1>
             <p className="hero-question">Biết AI rất mạnh,<br />nhưng chưa biết bắt đầu từ đâu?</p>
-            <p className="hero-description">Cùng trao đổi, thực hành và đưa AI vào công việc mỗi ngày. Từ viết content, tạo ảnh đến làm video bán hàng.</p>
+            <p className="hero-description"><strong>Vào nhóm Zalo miễn phí cùng Lê Hồng Sơn:</strong> trao đổi kiến thức AI mỗi ngày, Zoom thực hành cùng nhau mỗi cuối tuần, tặng sẵn Skill AI để bạn làm content, ảnh và video bán hàng ngay.</p>
             <ScrollToFormLink>Điền thông tin & vào nhóm</ScrollToFormLink>
             <div className="hero-assurance"><Check /> Miễn phí tham gia <span>·</span> Dành cho cả người mới</div>
           </div>
