@@ -71,7 +71,7 @@ function Index() {
     catch { setCopyError(true); }
   }
   return <div className="landing-page">
-    <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href={groupUrl} target="_blank" rel="noopener noreferrer">Vào nhóm miễn phí <ArrowUpRight /></a></Button></div></header>
+    <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href="#tham-gia">Vào nhóm miễn phí <ArrowDown /></a></Button></div></header>
     <main>
       <section className="hero-section">
         <div className="page-width hero-grid">
@@ -80,7 +80,7 @@ function Index() {
             <h1>AI Marketing<br />& <span>Bán hàng</span><span className="hero-byline">Cùng Lê Hồng Sơn</span></h1>
             <p className="hero-question">Biết AI rất mạnh,<br />nhưng chưa biết bắt đầu từ đâu?</p>
             <p className="hero-description">Cùng trao đổi, thực hành và đưa AI vào công việc mỗi ngày. Từ viết content, tạo ảnh đến làm video bán hàng.</p>
-            <JoinLink />
+            <ScrollToFormLink>Điền thông tin & vào nhóm</ScrollToFormLink>
             <div className="hero-assurance"><Check /> Miễn phí tham gia <span>·</span> Dành cho cả người mới</div>
           </div>
           <figure className="hero-portrait">
