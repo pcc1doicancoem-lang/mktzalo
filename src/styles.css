@@ -297,3 +297,5 @@ h2 { font-size:32px; font-weight:700; line-height:1.45; margin:0; }
 .signup-done { align-items:center; text-align:center; }
 .signup-done > svg { width:32px; height:32px; color:var(--accent); }
 .signup-done p { color:var(--muted-foreground); font-size:13px; }
+html { scroll-behavior:smooth; }
+#tham-gia { scroll-margin-top:84px; }

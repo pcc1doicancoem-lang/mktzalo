@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, ArrowRight, Check, Copy, MessageCircle, Video, Gift, MessagesSquare, X, ChevronDown } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ArrowDown, Check, Copy, MessageCircle, Video, Gift, MessagesSquare, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import instructorPhoto from "@/assets/le-hong-son.png.asset.json";
@@ -22,6 +22,10 @@ const benefits = [
 
 function JoinLink({ children = "Vào nhóm Zalo miễn phí", className = "" }: { children?: React.ReactNode; className?: string }) {
   return <Button variant="join" asChild className={className}><a href={groupUrl} target="_blank" rel="noopener noreferrer">{children}<ArrowUpRight aria-hidden="true" /></a></Button>;
+}
+
+function ScrollToFormLink({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return <Button variant="join" asChild className={className}><a href="#tham-gia">{children}<ArrowDown aria-hidden="true" /></a></Button>;
 }
 
 const scriptUrl = "https://script.google.com/macros/s/AKfycbyLFJk1OJIg0sGc3_vjmvCjRINiDbkL6TTVffKqj1YAjg8YsmeZtZaQpcuX21hfQ2XeOjOg/exec";
@@ -67,7 +71,7 @@ function Index() {
     catch { setCopyError(true); }
   }
   return <div className="landing-page">
-    <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href={groupUrl} target="_blank" rel="noopener noreferrer">Vào nhóm miễn phí <ArrowUpRight /></a></Button></div></header>
+    <header className="site-header"><div className="page-width header-inner"><a href="/" className="brand-name">LÊ HỒNG SƠN<span>AI MARKETING & BÁN HÀNG</span></a><Button variant="ghost" asChild className="header-join"><a href="#tham-gia">Vào nhóm miễn phí <ArrowDown /></a></Button></div></header>
     <main>
       <section className="hero-section">
         <div className="page-width hero-grid">
@@ -76,7 +80,7 @@ function Index() {
             <h1>AI Marketing<br />& <span>Bán hàng</span><span className="hero-byline">Cùng Lê Hồng Sơn</span></h1>
             <p className="hero-question">Biết AI rất mạnh,<br />nhưng chưa biết bắt đầu từ đâu?</p>
             <p className="hero-description">Cùng trao đổi, thực hành và đưa AI vào công việc mỗi ngày. Từ viết content, tạo ảnh đến làm video bán hàng.</p>
-            <JoinLink />
+            <ScrollToFormLink>Điền thông tin & vào nhóm</ScrollToFormLink>
             <div className="hero-assurance"><Check /> Miễn phí tham gia <span>·</span> Dành cho cả người mới</div>
           </div>
           <figure className="hero-portrait">
