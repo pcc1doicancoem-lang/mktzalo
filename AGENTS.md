@@ -10,5 +10,5 @@
 <!-- LOVABLE:END -->
 
 - Keep the community landing page at `/` with its own Vietnamese head metadata, because it is the primary public experience.
-- Use direct external Zalo links for community entry; do not simulate registration or collect personal information without a real submission service.
+- Use direct external Zalo links for community entry; the signup form posts to the owner-provided Google Apps Script endpoint; never simulate submission.
 - Keep page-specific visual rules and semantic colors in `src/styles.css`, so the landing page remains consistent.
