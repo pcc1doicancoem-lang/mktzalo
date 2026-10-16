@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, ArrowRight, Check, Copy, MessageCircle, Video, Gift, MessagesSquare, X, ChevronDown } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ArrowDown, Check, Copy, MessageCircle, Video, Gift, MessagesSquare, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import instructorPhoto from "@/assets/le-hong-son.png.asset.json";
