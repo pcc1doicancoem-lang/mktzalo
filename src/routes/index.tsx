@@ -28,7 +28,7 @@ function ScrollToFormLink({ children, className = "" }: { children: React.ReactN
   return <Button variant="join" asChild className={className}><a href="#tham-gia">{children}<ArrowDown aria-hidden="true" /></a></Button>;
 }
 
-const scriptUrl = "https://script.google.com/macros/s/AKfycbyLFJk1OJIg0sGc3_vjmvCjRINiDbkL6TTVffKqj1YAjg8YsmeZtZaQpcuX21hfQ2XeOjOg/exec";
+const scriptUrl = "https://script.google.com/macros/s/AKfycbx6MImvbDAfszD7F2L2p4yKg7evXbP6POmfToyDaWoCOAVPChx4FSxL9Bqw4PaGV0ah/exec";
 
 function SignupForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
@@ -51,7 +51,7 @@ function SignupForm() {
       window.open(groupUrl, "_blank", "noopener,noreferrer");
     } catch { setStatus("error"); }
   }
-  if (status === "done") return <div className="signup-form signup-done"><Check /><p>Đăng ký thành công! Nếu nhóm Zalo chưa tự mở, bấm nút dưới đây.</p><JoinLink className="final-join" /></div>;
+  if (status === "done") return <div className="signup-form signup-done"><Check /><p>Đã gửi yêu cầu đăng ký. Nếu nhóm Zalo chưa tự mở, bấm nút dưới đây.</p><JoinLink className="final-join" /></div>;
   return <form className="signup-form" onSubmit={onSubmit} noValidate>
     <h3>Đăng ký vào nhóm miễn phí</h3>
     <label>Họ và tên<input name="name" required maxLength={100} placeholder="Nguyễn Văn A" autoComplete="name" /></label>
